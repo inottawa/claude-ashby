@@ -184,6 +184,9 @@ a { color: var(--rcaf); }
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
+.pin-home { background: #1f3a68; }
+.pin-war { background: #b3282d; }
+
 .leaflet-popup-content { font: 14px/1.45 var(--sans); }
 .pop-year { color: #b3282d; font-weight: 600; font-size: 13px; }
 

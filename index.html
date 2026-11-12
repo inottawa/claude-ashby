@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -40,6 +41,7 @@
     </div>
   </div>
   <nav class="toc" aria-label="Sections">
+    <a href="#journey">Map</a>
     <a href="#early-life">Early life</a>
     <a href="#war">The war</a>
     <a href="#service">Air Force career</a>
@@ -49,6 +51,26 @@
     <a href="#records">Records</a>
   </nav>
 </header>
+
+<section id="journey" class="journey">
+  <div class="journey-head">
+    <h2>The journey</h2>
+    <p>From a CPR station village on the Alberta prairie to the skies over North Africa, Malta, Sicily and Italy, and home again to a career in the Air Force on the West Coast. Tap a numbered pin for the story at that spot.</p>
+    <div class="view-buttons" role="group" aria-label="Map view">
+      <button type="button" data-view="all" aria-pressed="true">Whole life</button>
+      <button type="button" data-view="alberta">Alberta</button>
+      <button type="button" data-view="war">The war</button>
+      <button type="button" data-view="bc">British Columbia</button>
+    </div>
+  </div>
+  <div id="journey-map" class="journey-map" role="img" aria-label="Map of Claude Ashby's life: southern Alberta, England, North Africa, Malta, Sicily, Italy, Calgary, Vancouver and Chilliwack"></div>
+  <ul class="map-legend">
+    <li><span class="swatch" style="--c:#1f3a68; --d:solid"></span>Home in Canada</li>
+    <li><span class="swatch" style="--c:#b3282d; --d:solid"></span>Wartime operations: North Africa, Malta, Sicily, Italy</li>
+    <li><span class="swatch swatch-land"></span>Travel overseas and home (indicative only)</li>
+  </ul>
+  <p class="map-note">Wartime pins mark regions, not airfields: the records name the theatres he flew over, not his bases. His wartime routes and ports aren't recorded, so those lines only show the general direction of travel. His squadron records should pin these down.</p>
+</section>
 
 <main>
 
@@ -181,6 +203,9 @@
 <footer>
   <p>A family history by his grandson, researched from public records. Corrections and additions are welcome.</p>
 </footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="claude-journey.js"></script>
 
 </body>
 </html>
