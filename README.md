@@ -27,7 +27,7 @@ Live site: https://inottawa.github.io/claude-ashby/
 | 51 operational trips, RAF Western Desert Air Force: North Africa, Malta, Sicily, Italy | Herald, 17 May 1958 |
 | Warrant officer, repatriated to Canada, March 1945 | Herald, 19 Mar 1945, p. 7 |
 | Institute of Technology and Art, Calgary, 1945 | Herald, 17 May 1958 |
-| Promoted WO2 to WO1, May 1958; communications supervisor, No. 5 Air Division, Vancouver; married Betty Scott | Herald, 17 May 1958 |
+| Promoted WO2 to WO1, May 1958; communications supervisor, No. 5 Air Division, Vancouver; married Betty Scott; children Richard and Cathy | Herald, 17 May 1958 |
 | Died 5 Mar 1998, Chilliwack General Hospital, aged 76; retired from the Armed Forces; cremated | BC death registration 1998-09-004913 |
 
 ### Not a match
@@ -36,7 +36,7 @@ The 1921 census lists a Claude Ashby, age 13, in Strathcona, AB. That's a differ
 
 ### Kept off the public site on purpose
 
-The death registration also shows his health number, his street address, and the informant's name and address. The 1958 article names his children. None of these are published on the site.
+The death registration also shows his health number, his street address, and the informant's name and address. None of these are published on the site.
 
 ### Still to find
 
