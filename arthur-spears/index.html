@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -32,6 +33,7 @@
   <p class="dates">4 March 1904 – March 1984</p>
   <p class="lede">A London-born engineer who crossed the Atlantic in 1925, worked in the Parry Sound backwoods, married a Northumberland farmer's daughter, and raised three sons in Ontario.</p>
   <nav class="toc" aria-label="Sections">
+    <a href="#journey">Map</a>
     <a href="#london">London</a>
     <a href="#crossings">Crossings</a>
     <a href="#orrville">Orrville</a>
@@ -41,6 +43,27 @@
     <a href="#records">Records</a>
   </nav>
 </header>
+
+<section id="journey" class="journey">
+  <div class="journey-head">
+    <h2>The journey</h2>
+    <p>From an east London birth to a Northumberland County churchyard, by way of three Atlantic crossings and the Parry Sound backwoods. Tap a numbered pin for the story at that spot.</p>
+    <div class="view-buttons" role="group" aria-label="Map view">
+      <button type="button" data-view="all" aria-pressed="true">Whole journey</button>
+      <button type="button" data-view="england">London</button>
+      <button type="button" data-view="ontario">Ontario</button>
+      <button type="button" data-view="cobourg">Cobourg area</button>
+    </div>
+  </div>
+  <div id="journey-map" class="journey-map" role="img" aria-label="Map of Arthur Spears's journey from London to Ontario, with three Atlantic crossings in 1925, 1928 and 1934"></div>
+  <ul class="map-legend">
+    <li><span class="swatch" style="--c:#c0392b; --d:dashed"></span>1925 · <em>Empress of France</em> → Quebec</li>
+    <li><span class="swatch" style="--c:#1d6f78; --d:solid"></span>1928 · <em>Megantic</em>, Southampton → Halifax</li>
+    <li><span class="swatch" style="--c:#8e5bb5; --d:dotted"></span>1934 · <em>Duchess of York</em> → Halifax</li>
+    <li><span class="swatch swatch-land"></span>Overland (straight lines, not the actual route)</li>
+  </ul>
+  <p class="map-note">Pin locations are approximate where the records name only a township or village. The 1925 and 1934 departure ports aren't recorded in the index, so those routes start at sea.</p>
+</section>
 
 <main>
 
@@ -57,21 +80,25 @@
     <p>In the 1920s thousands of young British men emigrated to Canada for work. Arthur made the crossing at least three times.</p>
     <ol class="crossings">
       <li>
+        <img class="ship" src="images/ship-empress-of-france.jpg" alt="The Canadian Pacific liner Empress of France at sea, around 1919–1931" loading="lazy">
         <p class="crossing-date">26 June 1925</p>
         <h3>Empress of France → Quebec</h3>
         <p>Arthur Spears, 20, English, lands at Quebec. This is his first arrival in Canada.</p>
       </li>
       <li>
+        <img class="ship" src="images/ship-megantic.jpg" alt="The White Star liner Megantic, around 1909–1920" loading="lazy">
         <p class="crossing-date">1 April 1928</p>
         <h3>Megantic, Southampton → Halifax</h3>
         <p>He returns after a visit home, aged 24, single, an engineer with $100 in his pocket. He paid his own passage and was admitted as a landed immigrant.</p>
       </li>
       <li>
+        <img class="ship" src="images/ship-duchess-of-york.jpg" alt="The Canadian Pacific liner Duchess of York, 1920s–1930s" loading="lazy">
         <p class="crossing-date">22 April 1934</p>
         <h3>Duchess of York → Halifax</h3>
         <p>Arthur Spears (indexed as "Speara"), 30, English, lands at Halifax again.</p>
       </li>
     </ol>
+    <p class="credit">Ship photographs: Wikimedia Commons, public domain (<a href="https://commons.wikimedia.org/wiki/File:SS_Empress_of_France_1919-1931.jpg">Empress of France</a>, <a href="https://commons.wikimedia.org/wiki/File:SS_Megantic.jpg">Megantic</a>, <a href="https://commons.wikimedia.org/wiki/File:SS_Duchess_of_York.jpg">Duchess of York</a>).</p>
 
     <figure class="doc">
       <img src="images/manifest-1928-left.jpg" alt="1928 Megantic manifest, line 12: Spears, Arthur William Thomas, 24, single, born London, England; in Canada before 1925, Orville P.O., Edgington, Ont." loading="lazy">
@@ -96,6 +123,34 @@
       <figcaption>The Willis household in the 1931 census, Hamilton Township, Northumberland: William Henry, Dora, Inez, and a young hired hand from Scotland.</figcaption>
     </figure>
     <p>Arthur and Inez had three sons: <strong>Clayton Arthur</strong>, born in Cobourg on 17 July 1940, <strong>Ron</strong> and <strong>Wayne</strong>.</p>
+
+    <figure class="tree" aria-label="Family tree">
+      <div class="tree-gen tree-parents">
+        <div class="tree-couple">
+          <div class="person">Arthur Edgar Spears<span>b. 1884, Aston, Birmingham</span></div>
+          <div class="person probable">Marie Minnie Wells<span>c. 1884 – 1926 · probable</span></div>
+        </div>
+        <div class="tree-couple">
+          <div class="person">William Henry Willis<span>1864 – 1940 · b. England</span></div>
+          <div class="person">Susan Dora Cook<span>1863 – 1953</span></div>
+        </div>
+      </div>
+      <div class="tree-links" aria-hidden="true"><span></span><span></span></div>
+      <div class="tree-gen tree-main">
+        <div class="tree-couple married">
+          <div class="person main">Arthur Thomas Spears<span>1904 – 1984</span></div>
+          <div class="wed">m. 30 Apr 1936</div>
+          <div class="person main">Inez Beatrice Willis<span>1905 – 1994</span></div>
+        </div>
+      </div>
+      <div class="tree-links single" aria-hidden="true"><span></span></div>
+      <div class="tree-gen tree-kids">
+        <div class="person">Clayton Arthur<span>1940 – 2025</span></div>
+        <div class="person">Ron</div>
+        <div class="person">Wayne</div>
+      </div>
+      <figcaption>Arthur's mother is identified from the marriage index and the Wells employer at Orrville. A marriage certificate would confirm it.</figcaption>
+    </figure>
     <p class="pending">Where Arthur worked in Northumberland, his trade as an engineer, and family stories are still to be added.</p>
   </section>
 
@@ -173,6 +228,9 @@
 <footer>
   <p>A family history by his grandson, researched from public records. Corrections and additions are welcome.</p>
 </footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="journey.js"></script>
 
 </body>
 </html>
