@@ -4,6 +4,8 @@ A family history site for Claude Ashby (17 April 1921 – 5 March 1998), a south
 
 Live site: https://inottawa.github.io/claude-ashby/
 
+The site also has a page for **Arthur Thomas Spears** (4 March 1904 – March 1984), a London-born engineer who emigrated to Ontario in 1925: https://inottawa.github.io/claude-ashby/arthur-spears/. Its sources are listed on the page itself, in `arthur-spears/index.html`.
+
 ## Editing
 
 - The site is plain HTML and CSS: `index.html` and `style.css`. There's no build step.

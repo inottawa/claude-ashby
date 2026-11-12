@@ -52,6 +52,82 @@ a { color: var(--rcaf); }
 
 .hero { padding-top: 56px; }
 
+.family-nav {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  padding: 10px 16px;
+  background: #13284a;
+  font-size: 14px;
+}
+
+.family-nav a {
+  color: #c9d6ee;
+  text-decoration: none;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.family-nav a[aria-current="page"] {
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.hero--sea { background: #1d4b52; }
+.hero--sea .eyebrow, .hero--sea .dates, .hero--sea .lede { color: #d3e6e4; }
+
+.emblem {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--serif);
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  color: #1d4b52;
+  background: #f3f1ea;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.15);
+}
+
+.crossings {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.crossings li {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-top: 4px solid #1d4b52;
+  border-radius: 6px;
+  padding: 16px 18px;
+}
+
+.crossings h3 { margin: 4px 0 6px; font-size: 16px; }
+.crossings p { margin: 0; font-size: 15px; color: var(--muted); }
+.crossings .crossing-date { font-family: var(--serif); font-size: 18px; color: var(--red); }
+
+.doc { margin: 28px 0; }
+
+.doc img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  background: #fff;
+  margin-bottom: 6px;
+}
+
+.doc figcaption { font-size: 14px; color: var(--muted); margin-top: 8px; }
+
+.pending-list li { color: var(--pending-ink); }
+
 .hero-inner {
   display: flex;
   align-items: center;
