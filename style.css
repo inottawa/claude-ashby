@@ -50,6 +50,49 @@ a { color: var(--rcaf); }
   padding: 72px 16px 40px;
 }
 
+.hero { padding-top: 56px; }
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 880px;
+  margin: 0 auto 32px;
+  text-align: left;
+}
+
+.hero-text { flex: 1 1 360px; }
+.hero-text .lede { margin-left: 0; }
+.hero-text .roundel { margin-left: 0; }
+
+.hero-portrait {
+  flex: 0 0 240px;
+  margin: 0;
+}
+
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 6px solid #f3f1ea;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  filter: sepia(0.25) contrast(1.05);
+}
+
+.hero-portrait figcaption {
+  font-size: 13px;
+  color: #c9d6ee;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .hero-inner { flex-direction: column; text-align: center; gap: 24px; }
+  .hero-portrait { flex-basis: auto; width: 200px; }
+  .hero-text .lede, .hero-text .roundel { margin-left: auto; }
+}
+
 .roundel {
   width: 72px;
   height: 72px;
@@ -204,6 +247,75 @@ p.pending { padding: 10px 14px; }
 }
 
 figcaption { margin-top: 10px; display: inline-block; }
+
+.note {
+  font-size: 15px;
+  color: var(--muted);
+  border-left: 3px solid var(--line);
+  padding-left: 12px;
+}
+
+.pull {
+  margin: 32px 0;
+  padding: 20px 24px;
+  background: var(--surface);
+  border-left: 4px solid var(--red);
+  border-radius: 0 6px 6px 0;
+}
+
+.pull p {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+
+.pull cite { font-style: normal; font-size: 14px; color: var(--muted); }
+
+.inline-portrait {
+  float: right;
+  width: 200px;
+  margin: 4px 0 16px 24px;
+}
+
+.inline-portrait img,
+.clippings img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.inline-portrait figcaption,
+.clippings figcaption {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
+#service::after { content: ""; display: block; clear: both; }
+
+@media (max-width: 560px) {
+  .inline-portrait { float: none; margin: 0 auto 20px; }
+}
+
+.clippings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  align-items: start;
+  margin: 24px 0;
+}
+
+.clippings figure { margin: 0; }
+
+.clippings img {
+  max-height: 420px;
+  object-fit: cover;
+  object-position: top;
+}
 
 .timeline {
   list-style: none;
